@@ -1,0 +1,102 @@
+header nav{
+    background-color: #333;
+}
+header nav .logo{
+    display: inline-block;
+}
+header nav .logo img{
+    height: 50px;
+}
+header nav .list{
+    float: right;
+    display: inline-block;
+}/*将对象呈递为内联对象，但是对象的内容作为块对象呈递。
+旁边的内联对象会被呈递在同一行内，允许空格。
+这就是display:inline-block的作用，再讲的通俗一点就是，
+Display值为inline-block的元素内部形成一个块状盒模型，
+而本身形成类似一个内联的被替代元素”。
+即display为inline-block的元素既可以像块状元素一样定义高度宽度，
+又可以和内联元素（比如文字）排列在一行。*/
+header nav .list ul{
+    display: inline-block;
+    margin-top: 15px;
+}
+header nav .list ul li{
+    font-size: 15px;
+    margin-right: 20px;
+    float: left;
+}
+header nav .list ul li a{
+    color: white;
+    text-decoration: none;
+}
+header nav .list ul li a:hover,
+header nav .list ul li.gray a{
+    color: gray;
+}
+body{
+    background-color: #ddd;
+    font-family: "Microsoft YaHei"
+}
+article,aside{
+    margin: 10px;
+    background-color: #ffffff;
+    padding:20px 10px;
+}
+article h3,article .nt{
+    color: gray;
+}
+article figure{
+    border-style: solid;
+    border-color: gray;
+    border-width: thin;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width:200px;
+}
+article table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid gray;
+    text-align: left;
+    empty-cells: hide;
+}
+article table thead{
+    color: white;
+    background-color: #333333;
+} 
+article table tbody .zj{
+    background-color: #cccccc;
+}
+aside form div{
+    margin: 15px 0;
+    font-size: 14px;
+}
+aside form div .left{
+    float: left;
+    text-align: right;
+    width:40%;
+    padding-right: 15px;
+}
+aside form div p{
+    color: #aaaaaa;
+    font-size: 14px;
+    margin-left: 41%;
+}
+aside textarea{
+    width: 50%;
+    height: 15%;
+}
+aside form input[type="submit"]{
+    width: 100%;
+    height: 40px;
+    background-color: #128fdc;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+}
+aside form input[type="submit"]:hover{
+    background-color: #0063dc;
+}
